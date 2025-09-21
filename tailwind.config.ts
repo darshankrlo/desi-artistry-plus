@@ -47,6 +47,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom colors for artisan theme
+        terracotta: {
+          DEFAULT: "hsl(var(--terracotta))",
+          light: "hsl(var(--terracotta-light))",
+          dark: "hsl(var(--terracotta-dark))",
+        },
+        cream: "hsl(var(--cream))",
+        "warm-brown": "hsl(var(--warm-brown))",
+        gold: "hsl(var(--gold))",
+        sage: "hsl(var(--sage))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

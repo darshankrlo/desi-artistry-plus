@@ -8,35 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 28 20% 96%;
+    --foreground: 20 14% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 20 14% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 20 14% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 18 72% 58%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 25 25% 88%;
+    --secondary-foreground: 20 14% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 25 25% 88%;
+    --muted-foreground: 20 14% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 30 80% 65%;
+    --accent-foreground: 20 14% 12%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 25 25% 88%;
+    --input: 25 25% 88%;
+    --ring: 18 72% 58%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+          /* Custom design tokens */
+    --terracotta: 18 72% 58%;
+    --terracotta-light: 22 65% 72%;
+    --terracotta-dark: 14 68% 45%;
+    --cream: 28 20% 96%;
+    --warm-brown: 20 14% 12%;
+    --gold: 45 95% 68%;
+    --sage: 120 12% 65%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--terracotta)), hsl(var(--terracotta-light)));
+    --gradient-warm: linear-gradient(180deg, hsl(var(--cream)), hsl(25 25% 92%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--terracotta-dark)), hsl(var(--terracotta)));
+    
+    /* Shadows */
+    --shadow-warm: 0 4px 12px hsl(var(--terracotta) / 0.15);
+    --shadow-card: 0 2px 8px hsl(var(--warm-brown) / 0.08);
+    --shadow-elegant: 0 8px 32px hsl(var(--terracotta) / 0.12);
+    
+          /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 

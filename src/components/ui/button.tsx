@@ -15,6 +15,11 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Custom artisan variants
+        hero: "bg-gradient-to-r from-terracotta to-terracotta-light text-primary-foreground hover:from-terracotta-dark hover:to-terracotta shadow-warm transition-all duration-300 hover:shadow-elegant hover:scale-105",
+        artisan: "bg-terracotta text-primary-foreground hover:bg-terracotta-dark shadow-warm transition-all duration-300",
+        warm: "bg-secondary text-secondary-foreground hover:bg-accent/50 border border-border",
+        chat: "bg-terracotta text-primary-foreground hover:bg-terracotta-dark rounded-full transition-all duration-200",
       },
       size: {
         default: "h-10 px-4 py-2",
