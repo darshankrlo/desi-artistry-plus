@@ -1,6 +1,9 @@
 import { ReactNode } from 'react';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
+import { Footer } from './Footer';
+import { AIChatbot } from '@/components/ui/ai-chatbot';
+import { Toaster } from '@/components/ui/sonner';
 
 interface AppLayoutProps {
   children: ReactNode;
@@ -16,7 +19,10 @@ export const AppLayout = ({ children, showSidebar = true }: AppLayoutProps) => {
         <main className="flex-1 overflow-auto">
           {children}
         </main>
+        <Footer />
       </div>
+      <AIChatbot />
+      <Toaster />
     </div>
   );
 };

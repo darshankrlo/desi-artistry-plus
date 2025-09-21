@@ -36,10 +36,20 @@ const messages = [
 
 export const CommunityPage = () => {
   const [newMessage, setNewMessage] = useState('');
+  const [chatMessages, setChatMessages] = useState(messages);
 
   const handleSendMessage = () => {
     if (newMessage.trim()) {
-      // Handle sending message
+      const message = {
+        id: Date.now(),
+        user: "You",
+        avatar: "ME",
+        message: newMessage,
+        time: "now",
+        likes: 0,
+        replies: 0
+      };
+      setChatMessages(prev => [...prev, message]);
       setNewMessage('');
     }
   };
@@ -54,7 +64,7 @@ export const CommunityPage = () => {
 
       {/* Messages Area */}
       <div className="flex-1 overflow-y-auto p-6 space-y-4">
-        {messages.map((message) => (
+        {chatMessages.map((message) => (
           <Card key={message.id} className="shadow-card hover:shadow-warm transition-shadow">
             <CardContent className="p-4">
               <div className="flex items-start gap-3">

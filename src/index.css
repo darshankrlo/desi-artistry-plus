@@ -17,35 +17,35 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 20 14% 12%;
 
-    --primary: 18 72% 58%;
+    --primary: 200 15% 25%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 25 25% 88%;
-    --secondary-foreground: 20 14% 12%;
+    --secondary: 210 15% 92%;
+    --secondary-foreground: 200 15% 25%;
 
-    --muted: 25 25% 88%;
-    --muted-foreground: 20 14% 46%;
+    --muted: 210 15% 92%;
+    --muted-foreground: 200 10% 55%;
 
-    --accent: 30 80% 65%;
-    --accent-foreground: 20 14% 12%;
+    --accent: 200 30% 60%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 25 25% 88%;
-    --input: 25 25% 88%;
-    --ring: 18 72% 58%;
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 200 30% 60%;
 
     --radius: 0.75rem;
     
           /* Custom design tokens */
-    --terracotta: 18 72% 58%;
-    --terracotta-light: 22 65% 72%;
-    --terracotta-dark: 14 68% 45%;
+    --terracotta: 200 30% 60%;
+    --terracotta-light: 200 25% 75%;
+    --terracotta-dark: 200 35% 45%;
     --cream: 28 20% 96%;
-    --warm-brown: 20 14% 12%;
-    --gold: 45 95% 68%;
-    --sage: 120 12% 65%;
+    --warm-brown: 200 15% 25%;
+    --gold: 45 85% 65%;
+    --sage: 120 20% 70%;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--terracotta)), hsl(var(--terracotta-light)));
